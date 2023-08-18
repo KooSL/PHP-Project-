@@ -1,1 +1,117 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
 
+.navbar{
+    background-color: #cc1212;
+    padding: 3px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 25px;
+}
+
+/*.navbar a.active{
+    background-color: white;
+    color: black;
+}*/
+
+.navbar a:hover{
+    padding: 5;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+}
+
+
+
+.menu{
+    text-align: right;
+}
+
+.menu li{
+    display: inline;
+}
+
+.login-form{
+    width: 600px;
+    margin: 25px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.login-form input{
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 18px;
+    border: 1px solid gray;
+    display: block;
+    width: 50%;
+}
+
+/*.login-form input.placeholder{
+    text-align: center;
+    color: red;
+}*/
+
+
+.login-form h4 a{
+    text-decoration: none;
+    color: black;
+    font-size: 100%;
+}
+
+.login-form h5 a{
+    text-decoration: none;
+    color: black;
+    font-size: 110%;
+}
+
+.sign-up h5 a{
+    text-decoration: none;
+    color: black;
+    font-size: 110%;
+}
+
+
+.login-form input[type="submit"]{
+    background-color: #cc1212;
+    color: white;
+    border: none;
+    width: 20%;
+    cursor: pointer;
+} 
+
+.login-form input[type="submit"]:hover{
+    background-color: #f70202;
+    /*border: 1px solid black;*/
+}  
+
+.sign-up{
+    width: 600px;
+    margin: 25px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.sign-up input{
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 18px;
+    border: 1px solid gray;
+    display: block;
+    width: 50%;
+}
+
+.sign-up input[type="submit"]{
+    background-color: #cc1212;
+    color: white;
+    border: none;
+    width: 20%;
+    cursor: pointer;
+}  
