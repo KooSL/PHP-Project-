@@ -1,15 +1,15 @@
 <?php include 'header.php'; ?>
 
 <div class="menu-heading">
-    <h1>News</h1>
+    <h1>Dashboard</h1>
     <hr>
 </div>
 
-<!-- <div class="dashboard-grid">
-    <div class="dashboard-card">
+<div class="dashboard-grid">
+    <a href="news.php"><div class="dashboard-card">
         <p>Total News</p>
         <h3>256</h3>
-    </div>
+    </div></a>
 
     <div class="dashboard-card">
         <p>Total Categories</p>
@@ -20,7 +20,7 @@
         <p>Total Ads</p>
         <h3>26</h3>
     </div>
-</div> -->
+</div>
 
 <?php include 'footer.php'; ?>
 

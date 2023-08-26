@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
 <div class="menu-heading">
-    <h1>News</h1>
+    <h1>Ads</h1>
     <hr>
 </div>
 
