@@ -53,27 +53,59 @@ ul li a:hover{
     display: inline;
 }
 
+img{
+    height: 50px;
+    border-radius: 100px;
+    /*box-shadow: 1px 1px 6px white;*/
+    position: absolute;
+
+}
+
+
 .login-form{
-    width: 600px;
+    background-color: white;
+    width: 400px;
     margin: 25px auto;
     text-align: center;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
+    transition: all ease-in-out 0.3s;
 }
 
-.login-form input{
+.login-form:hover{
+    box-shadow: 0.5px 5px 20px gray;
+    transition: all ease-in-out 0.3s;
+}
+
+.login-form .l-inputs input{
     text-align: center;
     padding: 10px;
     margin: 10px auto;
-    border-radius: 18px;
-    border: 1px solid gray;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: white;
     display: block;
-    width: 50%;
+    width: 70%;
+    border-radius: 18px;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 2px 3px 5px gray;
 }
+
+.login-form input:focus {
+  border-color: #cc1212;
+}
+
 
 input::placeholder{
     text-align: center;
     color: red;
+}
+
+.l-inputs input:hover{
+    box-shadow: 2px 3px 13px gray;
+    transition: all ease-in-out 0.3s;
+    border-radius: 18px;
+
 }
 
 
@@ -97,7 +129,9 @@ input::placeholder{
 
 
 .login-form input[type="submit"]{
-    background-color: #cc1212;
+    border-radius: 18px;
+    padding: 10px;
+    background-color: #f70202;
     color: white;
     border: none;
     width: 20%;
@@ -105,30 +139,65 @@ input::placeholder{
 } 
 
 .login-form input[type="submit"]:hover{
-    background-color: #f70202;
-    transition-duration: 0.5s;
+    box-shadow: 0.5px 1.5px 5px gray;
+    background-color: #cc1212;
+    transition-duration: 0.3s;
 }  
 
 .sign-up{
-    width: 600px;
+    background-color: white;
+    width: 400px;
     margin: 25px auto;
     text-align: center;
     padding: 10px;
-    border-radius: 15px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 20px;
+}
+
+.sign-up .s-inputs input{
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: white;
+    display: block;
+    width: 70%;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 2px 3px 5px gray;
+    border-radius: 18px;
+}
+
+.s-inputs input:hover{
+    box-shadow: 2px 3px 13px gray;
+    transition: all ease-in-out 0.3s;
+    border-radius: 18px;
+}
+
+.sign-up input:focus {
+  border-color: #cc1212;
+}
+
+.sign-up:hover{
+    box-shadow: 0.5px 5px 20px gray;
+    transition: all ease-in-out 0.3s;
 }
 
 .sign-up input{
     text-align: center;
     padding: 10px;
     margin: 10px auto;
-    border-radius: 18px;
+    /*border-radius: 18px;*/
     border: 1px solid gray;
     display: block;
-    width: 50%;
+    width: 70%;
+    transition: all ease-in-out 0.3s;
+
 }
 
 .sign-up input[type="submit"]{
-    background-color: #cc1212;
+    border-radius: 15px;
+    background-color: #f70202;
     color: white;
     border: none;
     width: 20%;
@@ -136,6 +205,54 @@ input::placeholder{
 } 
 
 .sign-up input[type="submit"]:hover{
-    background-color: #f70202;
-    transition-duration: 0.5s;
-}  
+    background-color: #cc1212;
+    transition-duration: 0.3s;
+    box-shadow: 0.5px 1.5px 5px gray;
+} 
+
+/*p{
+    font-weight: bold;
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}*/
+
+.texts h3{
+    text-decoration: none;
+    color: #cc1212;
+    font-weight: bold;
+    font-size: 100px;
+    margin-right: 38%;
+    margin-left: 38%;
+    font-size: 100px;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*text-align: center;*/
+    /*justify-content: center;*/
+}
+
+.texts h3:hover{
+    /*box-shadow: 2px 3px 13px red;*/
+    color: black;
+}
+
+/*.texts h4{
+    color: blue;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+*/
+
+.sign-up .aha:hover{
+    color: #cc1212;
+}
+
+.login-form .cna:hover{
+    color: #cc1212;
+}
+
+.login-form .fp:hover{
+    color: #cc1212;
+}
+

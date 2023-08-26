@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.admin-container{
+    display: flex;
+}
+
+.nav{
+	text-decoration: none;
+    width: 20%;
+    background-color: #cc1212;
+    height: 100vh;
+    box-shadow: 0px 2px 8px gray;
+}
+
+.nav img{
+    height: 100px;
+    margin-top: 50px;
+    background-color: white;
+    /*box-shadow: 1px 1px 6px white;*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 100px;
+}
+
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    margin-top: 50px;
+}
+
+/*.menu li{
+    border-bottom: 2px solid gray;
+}*/
+
+.menu a{
+	color: white;
+    padding: 8px 5px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+
+.menu a:hover{
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    /*border-radius: 18px;*/
+	transition-duration: 0.3s;
+	/*box-shadow: 1px 2px 8px white;*/
+
+}
+
+/*.active{
+    background-color: black;
+    color: white;
+}*/
+
+.content{
+    padding: 10px;
+    flex: 1;
+}
+
+.menu-heading{
+    margin-bottom: 20px;
+}
+
+.menu-heading h1{
+    margin-bottom: 0;
+}
+
+.menu-heading hr{
+    height: 3px;
+    background-color: #cc1212;
+}
+
+.dashboard-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.dashboard-card{
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #cc1212;
+    color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 2px 8px gray;
+}
+
+.dashboard-card h3{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.dashboard-card p{
+    text-decoration: none;
+    /*font-size: 30px;*/
+}
+
+.dashboard-card:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 0.3s;
+}
+
+
