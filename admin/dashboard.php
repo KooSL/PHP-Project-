@@ -1,4 +1,8 @@
-<?php include 'header.php'; ?>
+<?php include 'header.php'; 
+    include '../includes/db.php';
+    $qry = "SELECT * FROM categories ORDER BY priority";
+    $result = mysqli_query($con, $qry);
+?>
 
 <div class="menu-heading">
     <h1>Dashboard</h1>
@@ -11,16 +15,18 @@
         <h3>256</h3>
     </div></a>
 
-    <div class="dashboard-card">
+    <a href="categories.php"><div class="dashboard-card">
         <p>Total Categories</p>
-        <h3>12</h3>
-    </div>
+        <!-- <?php while($row = mysqli_fetch_assoc($result)) {?>
+            <h3><?php echo $row['id'];?></h3>
+        <?php }?>
+ -->    </div></a>
+    
 
-    <div class="dashboard-card">
+    <a href="ads.php"><div class="dashboard-card">
         <p>Total Ads</p>
         <h3>26</h3>
-    </div>
+    </div></a>
 </div>
 
 <?php include 'footer.php'; ?>
-

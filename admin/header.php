@@ -1,3 +1,10 @@
+<!-- <?php session_start();
+// if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != "Yes")
+{
+    // header('location: ../login.php');
+}
+?> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +21,14 @@
                 <li><a href="dashboard.php" class="active">Dashboard</a></li>
                 <li><a href="categories.php">Categories</a></li>
                 <li><a href="news.php">News</a></li>
-                <li><a href="ads.php">Ads</a></li>
-                <li><a href="../login.php" class="logout-btn" onclick="return confirm('Are you sure to log out?')">Logout</a></li>
+                <li><a href="ads.php">Ads</a></li>   
+                <div class="logout">       
+                    <li><a href="../login.php" class="logout-btn" onclick="return confirm('Are you sure to log out?')">Logout</a></li>
+                </div>
             </ul>
         </div>
+        
+     
 
         <div class="content">
             <!-- Content Here  -->
