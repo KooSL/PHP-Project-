@@ -17,12 +17,12 @@ body{
     padding: 25px;
 }
 
-/*.navbar a.active{
+/* .menu .active{
     background-color: white;
     color: black;
-}
+} */
 
-.navbar a.login-form-active{
+/* .navbar a.login-form-active{
     background-color: white;
     color: black;
 }
@@ -73,7 +73,7 @@ img{
 }
 
 .login-form:hover{
-    box-shadow: 0.5px 5px 20px gray;
+    box-shadow: 0.5px 5px 20px red;
     transition: all ease-in-out 0.3s;
 }
 
@@ -129,6 +129,7 @@ input::placeholder{
 
 
 .login-form input[type="submit"]{
+    /* background: linear-gradient(90deg, #0b2adb, transparent) #cc1212; */
     border-radius: 18px;
     padding: 10px;
     background-color: #f70202;
@@ -138,10 +139,12 @@ input::placeholder{
     cursor: pointer;
 } 
 
-.login-form input[type="submit"]:hover{
+.login-form input[type="submit"]:hover, .login-form input[type="submit"]:focus{
     box-shadow: 0.5px 1.5px 5px gray;
     background-color: #cc1212;
     transition-duration: 0.3s;
+    /* background-color: #e91e63;
+    color: #fff; */
 }  
 
 .sign-up{
@@ -179,7 +182,7 @@ input::placeholder{
 }
 
 .sign-up:hover{
-    box-shadow: 0.5px 5px 20px gray;
+    box-shadow: 0.5px 5px 20px red;
     transition: all ease-in-out 0.3s;
 }
 
@@ -255,4 +258,3 @@ input::placeholder{
 .login-form .fp:hover{
     color: #cc1212;
 }
-
