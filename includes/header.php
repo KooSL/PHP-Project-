@@ -9,7 +9,7 @@
             <ul class="menu">
                 <li><a class="active" href="index.php">Home</a></li>
                 <li><a href="admin/dashboard.php">Dashboard</a></li>
-                <li><a href="">News</a></li>
+                <li><a href="news.php">News</a></li>
                 <li><a href="">Contact</a></li>
                 <li><a class="login-form-active" href="login.php">Login</a></li>
             </ul>
