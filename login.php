@@ -1,4 +1,7 @@
-<?php include 'includes/header.php'; ?>
+<?php
+    session_start();
+    include 'includes/header.php'; 
+?>
 
 <form action="" class="login-form" method="POST">
     <h1>Log In</h1>
@@ -23,6 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     $result = mysqli_query($con, $qry);
     if(mysqli_num_rows($result) == 1)
     {
+        $_SESSION['loggedin'] = "Yes";
         header('location: admin/dashboard.php');
     }
     else
