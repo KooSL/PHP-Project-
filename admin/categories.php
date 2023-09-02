@@ -28,8 +28,8 @@
         <td><?php echo $row['priority'];?></td>
         <td><?php echo $row['name'];?></td>
         <td>
-            <a href="editcategory.php" class="edit-btn">Edit</a>
-            <a href="" class="delete-btn">Remove</a>
+            <a href="editcategory.php?dataid=<?php echo $row['id'];?>" class="edit-btn">Edit</a>
+            <a href="actioncategory.php?deleteid=<?php echo $row['id']; ?>" class="delete-btn">Remove</a>
         </td>
     </tr>
     <?php }?>

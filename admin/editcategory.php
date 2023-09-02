@@ -1,8 +1,8 @@
-<?php 
+ <?php 
 	include 'header.php';
-	$id = $_GET['id'];
+	$dataid = $_GET['dataid'];
 	include '../includes/db.php';
-	$qry = "SELECT * FROM categories WHERE id=$id";
+	$qry = "SELECT * FROM categories WHERE id=$dataid";
 	$result = mysqli_query($con, $qry);
 	$row = mysqli_fetch_assoc($result);
 ?>
@@ -18,8 +18,8 @@
     <input type="number" value="<?php echo $row['priority'];?>" placeholder="Enter Priority" name="priority">
     <input type="text" placeholder="Enter Category Name" name="name" value="<?php echo $row['name'];?>" >
     <div class="form-footer">
-        <input type="submit" name="update" value="Update Category">
-        <a href="category.php" class="exit-btn">Exit</a>
+        <input type="submit" name="update" value="Update">
+        <a href="categories.php" class="exit-btn">Cancle</a>
     </div>
 </form>
 

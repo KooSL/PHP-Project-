@@ -22,25 +22,26 @@
     }
 
 
-    if(isset($_POST['update']))
+if(isset($_POST['update']))
+{
+    $dataid = $_POST['dataid'];
+    $name = $_POST['name'];
+    $priority = $_POST['priority'];
+    
+
+    $query = "UPDATE categories SET name='$name', priority='$priority' WHERE id=$dataid";
+    $result = mysqli_query($con, $query);
+
+    if($result)
     {
-        $dataid = $_POST['dataid'];
-        $priority = $_POST['priority'];
-        $name = $_POST['name'];
-
-        $query = "UPDATE categories SET priority='$priority', name='$name' WHERE id=$dataid";
-        $result = mysqli_query($con, $query);
-
-        if($result)
-        {
-            echo "<script>alert('Category Updated Successfully'); 
-            window.location.href='category.php';</script>";
-        }
-        else
-        {
-            echo "Error on updating category";
-        }
+        echo "<script>alert('Category Updated Successfully'); 
+        window.location.href='news.php';</script>";
     }
+    else
+    {
+        echo "Error on updating news";
+    }
+}
 
     if(isset($_GET['deleteid']))
     {
@@ -52,7 +53,7 @@
         if($result)
         {
             echo "<script>alert('Category Deleted Successfully'); 
-            window.location.href='category.php';</script>";
+            window.location.href='categories.php';</script>";
         }
         else
         {
