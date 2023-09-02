@@ -1,9 +1,9 @@
 body{
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: sans-serif; 
+    /*background-color: red;*/
 }
-
 
 .navbar{
     background-color: #cc1212;
@@ -258,3 +258,63 @@ input::placeholder{
 .login-form .fp:hover{
     color: #cc1212;
 }
+
+.news-container{
+    /*background-color: white;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    border-radius: 10px;
+    /*display: flex;*/
+    /*width: 400px;*/
+    margin: 15px;
+
+}
+
+.news{
+    font-weight: bold;
+    /* letter-spacing: 1px; */
+    background-color: #cc1212;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*box-shadow: 1px 2px 8px gray;*/
+}
+
+.news:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 0.3s;
+    box-shadow: 1px 2px 8px gray;
+}
+
+.news-container a{
+    text-decoration: none;
+    color: white;
+}
+
+.news-container img{
+    margin: 1px;
+    border-radius: 0;
+}
+
+.full-news{
+    text-align: center;
+}
+
+.full-news .title{
+    /* color: #cc1212; */
+    font-weight: bold;
+    font-size: 50;
+    margin: 0px;
+    padding: 0px;
+}
+
+.full-news .date{
+    color: #cc1212;
+    font-weight: bold;
+    /*font-size: 50;*/
+}
+
